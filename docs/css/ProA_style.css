@@ -1,8 +1,9 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 </style>
-
-
+h1 h2 h3 h4 p{
+	font-family: 'Mochiy Pop One';
+}
 /* ページ全体の背景色などを設定 */
 main {
 	background:  #deedff;
@@ -121,20 +122,25 @@ h1 {
   font-family: 'Mochiy Pop One';
 }
 h2 {
-  font-family: 'Mochiy Pop One';
   background: #fffaf4;
   color: #010101;
   border-left: solid 8px #e3bf00;
   padding: 0.5em;
+  font-family: 'Mochiy Pop One';
 }
 h3{
-  font-family: 'Mochiy Pop One';
 background: #fffaf4;
   color: #010101;
   border-left: solid 8px #e3bf00;
   padding: 0.5em;
-　text-align:left;
+  font-family: 'Mochiy Pop One';
 }
+
+
+
+
+
+
 
 
 

@@ -2,9 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 </style>
 
-h1 h2 h3 h4 p{
-	font-family: 'Mochiy Pop One'、サンセリフ;
-}
+h1{font-family: 'Mochiy Pop One'、サンセリフ;}
 /* ページ全体の背景色などを設定 */
 main {
 	background:  #deedff;

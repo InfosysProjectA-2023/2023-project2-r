@@ -109,7 +109,7 @@ background-image: repeating-linear-gradient(-45deg,#F6EEEC 0, #F6EEEC 3px,#fafaf
 }
 p{
 font-size: 30px;
-font-family: 'Mochiy Pop One'、サンセリフ;
+font-family: 'Mochiy Pop One';
 }
 
 h1 {
@@ -118,21 +118,22 @@ h1 {
   box-shadow: 0px 0px 0px 5px #fff0cd;
   border: dashed 2px white;
   padding: 0.2em 0.5em;
-  font-family: 'Mochiy Pop One'、サンセリフ;
+  font-family: 'Mochiy Pop One';
 }
 h2 {
-  font-family: 'Mochiy Pop One'、サンセリフ;
+  font-family: 'Mochiy Pop One';
   background: #fffaf4;
   color: #010101;
   border-left: solid 8px #e3bf00;
   padding: 0.5em;
 }
 h3{
-  font-family: 'Mochiy Pop One'、サンセリフ;
+  font-family: 'Mochiy Pop One';
 background: #fffaf4;
   color: #010101;
   border-left: solid 8px #e3bf00;
   padding: 0.5em;
+　text-align:left;
 }
 
 

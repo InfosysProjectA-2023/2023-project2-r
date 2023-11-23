@@ -25,6 +25,7 @@
   <!-- ページ上部に常時表示される部分にBootstrapのNavbarというコンポーネント（部品）を表示 -->
   <!-- その他のメニューを使う場合は，https://bootstrap-guide.com/category/navbars 等を参照のこと-->
   <header>
+<div class="bg bg_on"></div>
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
 	  <div class="container-lg">
 		<a class="navbar-brand" href="#">ProA 2022</a><!-- hrefのリンク先やテキストの部分は各チームで修正すること -->
@@ -39,10 +40,10 @@
 			 <li class="nav-item dropdown"><!-- カテゴリ別のメニュー項目を作る場合などに利用する．なお，hrefのリンク先は各チームで修正すること -->
               <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">各公園の詳細</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="satoyama-park.html">里山公園</a></li>
-                <li><a class="dropdown-item" href="tigasakipark_example.html">茅ヶ崎公園</a></li>
-                <li><a class="dropdown-item" href="tigasakityuuoupark_example.html">茅ヶ崎中央公園</a></li>
-                <li><a class="dropdown-item" href="motoyama_example.html">元町公園</a></li>
+                <li><a class="dropdown-item" href="satoyama.html">里山公園</a></li>
+                <li><a class="dropdown-item" href="chigasaki.html">茅ヶ崎公園</a></li>
+                <li><a class="dropdown-item" href="chigasaki_center.html">茅ヶ崎中央公園</a></li>
+                <li><a class="dropdown-item" href="motomachi.html">元町公園</a></li>
                 <!-- 適宜，カテゴリ内のページがあれば，個々に項目を追加（あるいは，削除）-->
               </ul>
             </li>
@@ -59,7 +60,7 @@
   </header>
 
   <main role="main" class="pt-5">
-	<input type="hidden" id="obj_id" value="3"><!-- ここのvalueの値をdata.json内のidの値と合わせることで表示が変わる -->
+	<input type="hidden" id="obj_id" value="2"><!-- ここのvalueの値をdata.json内のidの値と合わせることで表示が変わる -->
 	<!-- ページの見出し -->
 	<div class="p-3 p-sm-5 mb-4 bg-img bg-head">
 	  <div class="container">
@@ -77,45 +78,56 @@
 		  <h2 class="pl-1 bg-lightblue">紹介対象の名前
 			<!-- <span class="text-muted">It'll blow your mind.</span> -->
 		  </h2>
-				  <p id="detail" class="lead"> ここに詳細な説明を書き込んでいきます． </p>
+				  <p id="detail"> ここに詳細な説明を書き込んでいきます． </p>
 		</div>
 		<div class="col-md-5">
-		  <img id="thumnail_img" class="img-fluid mx-auto box-shadow" src="./photos/motomati2_thum.jpg" alt="画像の代替テキスト">
+		  <img id="thumnail_img" class="img-fluid mx-auto box-shadow" src="./photos/tigasaki1_thum.jpg" alt="画像の代替テキスト">
 		</div>
 	  </div>
 
 	  <div class="row m-3"><!-- 紹介対象の詳細（ここから）-->
-		<div class="img-fluid md-5 border-dashed box-shadow">
+		<div class="img-fluid md-5 border-dashed1 box-shadow">
 		  <h3 class="pl-3">元町公園の概要</h3>
-			<p id="abstract" class="lead">概要説明（施設や場所の紹介文）</p>
+			 <p id="abstract" class="lead">概要説明（施設や場所の紹介文）</p>
 		  <!--（注：LightBox2のファイルがコピーされていなければ，別ページが開く，という動作になる．）-->
 		  <div id="image_list">
-			<a href="./photos/motomati1_thum.jpg" data-lightbox="image-list">
-			  <img src="./photos/.jpg" class="col-3 mb-5 box-shadow"/></a>
+			<a href="./photos/tigasaki2.jpg" data-lightbox="image-list">
+			  <img src="./photos/tigasaki4_thum.jpg" class="col-3 mb-5 box-shadow"/></a>
 		  </div>
+		</div>
 
 		  <!-- 評価の☆を表示する -->
+		<div class="img-fluid md-5 border-dashed2 box-shadow">
 		  <h3 class="pl-3">評価</h3>
+			<p id="review" class="lead">レビュー</p>
 
 		  <div class="star-rating col-5 m-3 mb-5">
 			<!-- width: ○○%が☆5つに対する評価のパーセンテージ（例：4.5→90%） -->
 			<div class="star-rating-front" style="width: 95%">★★★★★</div>
 			<div class="star-rating-back">★★★★★</div>
 		  </div>
+		</div>
+	<div class="img-fluid md-5 border-dashed3 box-shadow">
+		  <h3 class="pl-3">アクセス</h3>
+			 <p id="acsess" class="lead">交通アクセス</p>
+		  </div>
+		</div>
 
 		  <!-- 地図の表示(JavaScript) -->
+		<div class="img-fluid md-5 border-dashed4 box-shadow">
 		  <h3 class="pl-3">場所</h3>
 			 <p id="map" class="lead"></p>
 		  <div id="map_here" class="col-5 m-5 mb-5">
 		  </div>
 		</div>
+
 		  	<nav aria-label="ページ送りの実例">
   <ul class="pagination justify-content-center">
     <li class="page-item"><a class="nav-link" href="front.html">TOP</a></li>
-    <li class="page-item"><a class="nav-link" href="satoyama-park.html">里山公園</a></li>
-    <li class="page-item"><a class="nav-link" href="tigasakipark_example.html">茅ヶ崎公園</a></li>
-    <li class="page-item"><a class="nav-link" href="tigasakityuuoupark_example.html">茅ヶ崎中央公園</a></li>
-    <li class="page-item"><a class="nav-link" href="motoyama_example.html">元町公園</a></li>
+    <li class="page-item"><a class="nav-link" href="satoyama.html">里山公園</a></li>
+    <li class="page-item"><a class="nav-link" href="chigasaki.html">茅ヶ崎公園</a></li>
+    <li class="page-item"><a class="nav-link" href="chigasaki_center.html">茅ヶ崎中央公園</a></li>
+    <li class="page-item"><a class="nav-link" href="motomachi.html">元町公園</a></li>
   </ul>
 </nav>
 	  </div><!-- 紹介対象の詳細（ここまで）-->

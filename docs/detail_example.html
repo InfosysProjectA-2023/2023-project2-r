@@ -47,6 +47,8 @@
                 <li><a class="dropdown-item" href="./detail_example.html?id=1">カテゴリ内のページ1</a></li>
                 <li><a class="dropdown-item" href="./detail_example.html?id=2">カテゴリ内のページ2</a></li>
                 <li><a class="dropdown-item" href="./detail_example.html?id=3">カテゴリ内のページ3</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=4">カテゴリ内のページ4</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=5">カテゴリ内のページ5</a></li>
                 <!-- 適宜，カテゴリ内のページがあれば，個々に項目を追加（あるいは，削除）-->
               </ul>
             </li>
@@ -132,11 +134,14 @@
   <!-- Make sure you put this AFTER Leaflet's CSS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
+  <!-- search_list.jsは，?q=でページを呼んで，検索結果を含む表示を作るようにする処理を行うJavaScriptファイル -->
+  <script src="js/search_list.js"></script>
+  
   <!-- 詳細情報のデータをDBからJSONから読み取り -->
   <script src="js/readJSON_detail.js"></script>
 
-  <!-- search_list.jsは，?q=でページを呼んで，検索結果を含む表示を作るようにする処理を行うJavaScriptファイル -->
-  <script src="js/search_list.js"></script>
+
+
 
 </body>
 

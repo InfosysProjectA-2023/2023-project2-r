@@ -33,22 +33,16 @@
         <div class="collapse navbar-collapse" id="Navbar">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">フロントページ</a><!-- hrefのリンク先は各チームで修正すること -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./detail_example.html?id=1">パラメータidの番号で内容変更</a><!-- hrefのリンク先は各チームで修正すること -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">無効</a>
+              <a class="nav-link active" aria-current="page" href="front.html">フロントページ</a><!-- hrefのリンク先は各チームで修正すること -->
             </li>
             <li class="nav-item dropdown"><!-- カテゴリ別のメニュー項目を作る場合などに利用する．なお，hrefのリンク先は各チームで修正すること -->
               <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">カテゴリ1</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./detail_example.html?id=2">カテゴリ内のページ1</a></li>
-                <li><a class="dropdown-item" href="./detail_example.html?id=3">カテゴリ内のページ2</a></li>
-                <li><a class="dropdown-item" href="./detail_example.html?id=4">カテゴリ内のページ3</a></li>
-                <li><a class="dropdown-item" href="./detail_example.html?id=5">カテゴリ内のページ4</a></li>
-                <li><a class="dropdown-item" href="./detail_example.html?id=6">カテゴリ内のページ5</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=2">里山公園</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=3">茅ヶ崎公園</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=4">茅ヶ崎中央公園</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=5">柳島しおさい公園</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=6">柳島スポーツ公園</a></li>
                 <!-- 適宜，カテゴリ内のページがあれば，個々に項目を追加（あるいは，削除）-->
               </ul>
             </li>
@@ -111,6 +105,39 @@
           <div id="map_here" class="col-5 m-5 mb-5">
       	  </div>
 			  </div>
+<p>
+      <div class="m-5 form-group"><!-- レビュー投稿欄（送信はjs/form_submit.jsで行う -->
+        <h3>レビューの投稿</h3><br />
+        <div class="input-group">
+          <!--  actionのURLは，掲示板機能を提供するWebAPIなので，変更の必要はありません -->
+          <form method="POST" action="https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_reg.php">
+            ユーザ名：<input class="form-control input-lg" type="text" size="30" name="user_name" required><br />
+            評価：<select class="form-control input-lg" name="review_score" size="1" required>
+              <option value="5">☆☆☆☆☆</option>
+              <option value="4">☆☆☆☆　</option>
+              <option value="3">☆☆☆　　</option>
+              <option value="2">☆☆　　　</option>
+              <option value="1">☆　　　　</option>
+            </select><br />
+            評価コメント：<br />
+            <textarea class="form-control" name="review_text" cols="50" rows="5"></textarea><br />
+            <input type="hidden" name="obj_id" id="obj_id"><!-- ここに各オブジェクトの番号を記入する必要はありません-->
+            <input type="hidden" name="gid" id="gid" value="X"><!-- ※※ ここは各グループの記号に必ず変更すること ※※ -->
+            <input class="form-control" type="submit" value="送信">
+          </form>
+        </div>
+      </div>
+
+		  	<nav aria-label="ページ送りの実例">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="nav-link" href="front.html">TOP</a></li>
+    <li class="page-item"><a class="nav-link" href="./detail_example.html?id=2">里山公園</a></li>
+    <li class="page-item"><a class="nav-link" href="./detail_example.html?id=3">茅ヶ崎公園</a></li>
+    <li class="page-item"><a class="nav-link" href="./detail_example.html?id=4">茅ヶ崎中央公園</a></li>
+    <li class="page-item"><a class="nav-link" href="./detail_example.html?id=5">柳島しおさい公園</a></li>
+    <li class="page-item"><a class="nav-link" href="./detail_example.html?id=6">柳島スポーツ公園</a></li>
+  </ul>
+</nav>
 		  </div><!-- 紹介対象の詳細（ここまで）-->
     </div>
   </main>

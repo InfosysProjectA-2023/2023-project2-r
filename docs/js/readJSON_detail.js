@@ -67,6 +67,11 @@ window.onload = function onLoad() {
 					if(detail_text != null){//<p id="detail"></p>のタグがあったら
 						detail_text.innerHTML = obj.detail; //detail（DBではカラム）の値に内容のHTMLを変更
 					}
+					
+					let map_text = document.getElementById("map");
+					if(map_text != null){//<p id="map"></p>のタグがあったら
+						map_text.innerHTML = obj.map; //detail（DBではカラム）の値に内容のHTMLを変更
+					}
 
 					let image_list = document.getElementById("image_list");
 					if(image_list){//<div id="image_list">のタグがあったら

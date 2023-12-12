@@ -73,6 +73,12 @@
 					map_text.innerHTML = obj.map; //detail（DBではカラム）の値に内容のHTMLを変更
 				}
 
+				let review_text = document.getElementById("map");
+				if(review_text != null){//<p id="review"></p>のタグがあったら
+					review_text.innerHTML = obj.review; //review（DBではカラム）の値に内容のHTMLを変更
+				}
+
+
 				let image_list = document.getElementById("image_list");
 				if(image_list){//<div id="image_list">のタグがあったら
 					image_list.innerHTML = ""; //id=image_listのタグの中のHTMLを空にする

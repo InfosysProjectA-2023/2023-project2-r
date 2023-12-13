@@ -135,6 +135,10 @@ background: #fffaf4;
 }
 
 
+#image_list img{
+	width: 460px;
+	height: 360px;
+}
 
 
 

@@ -162,7 +162,7 @@
   <!-- フッターの表示 -->
   <footer>
     (C) All Right Reserved, 2015-2023, Infosys Project A 
-   </footer>
+  </footer>
 	
   <!-- JavaScriptのライブラリ（jQueryは基本ライブラリ+Bootstrap用のJavaScriptファイル） -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -177,6 +177,8 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <!-- Make sure you put this AFTER Leaflet's CSS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+ <script src="js/form_submit.js"></script><!-- フォームへの書き込みをAjaxで送信する -->
+ <script src="js/insert_review.js"></script><!-- レビューをページに読み込む(必ず，<input name="gid"...のvalueを各グループの記号としてください) -->
 
 
 
@@ -185,8 +187,7 @@
 
   <!-- search_list.jsは，?q=でページを呼んで，検索結果を含む表示を作るようにする処理を行うJavaScriptファイル -->
   <script src="js/search_list.js"></script>
-  <script src="js/form_submit.js"></script><!-- フォームへの書き込みをAjaxで送信する -->
-  <script src="js/insert_review.js"></script><!-- レビューをページに読み込む(必ず，<input name="gid"...のvalueを各グループの記号としてください) -->
+ 
 
  
 
